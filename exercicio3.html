@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td><label for="i1">Descrição</label></td>
+                <td><input type="text" name="txt1" value="abc" maxlength="10" size="20" required id="i1">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="i2">Número</label></td>
+                <td><input type="number" name="num1" value="" size="5" max="10" required id="i2">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="i3">Email</label></td>
+                <td><input type="email" name="txt2" value="" required id="i3">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="i4">Data</label></td>
+                <td><input type="date" name="txt3" value="" 
+                    required id="i4" min="2019-02-25">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="i5">Intervalo</label></td>
+                <td><input type="range" name="rng" value="19" min="5" step="1" required id="i5">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="i6">Cor</label></td>
+                <td><input list="idLista" name="cor" value="" required id="i6">
+                    <datalist id="isLista">
+                <option>Amarelo</option>
+                <option>Azul</option>
+                <option>Vermelho</option>
+            </datalist>
+                </td>
+            </tr>
+            <td><label for="i7">Telefone</label></td>
+                <td><input type="text" name="tel" value="" pattern="\([0-9]{2}\)\d?[0-9]{4}-[0-9]{4}" placeholder="(99)99999-9999" id="i7" title="(99)99999-9999"/>
+                    </td>
+                </tr>
+                    <td><label for="i8">Código</label></td>
+                <td><input type="text" pattern="[DLK1-3]{1}" id="i8" required title="D ou L ou K ou 1 ou 2 ou 3"/>
+                    </td>
+                </tr>
+                <td><label>Sexo</label></td>
+                <td>
+                    <label>
+                        <input type="radio" name="sexo" value="M"/>Masculino
+                    </label>
+                    <label>
+                        <input type="radio" name="sexo" id="F" checked/>
+                        Feminino
+                    </label>
+                    </td>
+                </tr>
+                <td><label for="i10">Fumante?</label></td>
+                <td><input type="checkbox" name="fumante" id="i10"/></td>
+                </tr>
+                <tr>
+                    <td><label for="i11">Estado</label>/></td>
+                    <td>
+                        <select name="uf" size="2" id="i11">
+                            <option value="SP"> São Paulo</option>
+                            <option value="RJ"> Rio de Janeiro</option>
+                            <option value="MG"> Minas Gerais</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="i12">Observação</label></td>
+                    <td><textarea rows="5" cols="20" name="observ" id="i12">ABC</textarea></td>
+                </tr>
+                <tr>
+                    <td align="right"><input type="submit" name="bsub" value="Enviar"/></td>
+                     <td align="left"><input type="reset" value="Limpar"/></td>
+                </tr>
+        </table>
+    </form>
+    <a href="https://www.3schools.com/js/js_rege"></a>
+    
+</body>
+</html>
